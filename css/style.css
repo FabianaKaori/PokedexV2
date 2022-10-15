@@ -16,20 +16,20 @@ body{
 }
 main{
     display: inline-block; /* faz com o tamanho da main seja o tamanho da imagem */
-    margin-top: 5%; /* margem top */
+    margin-top: 10%; /* margem top */
     padding: 15px; /* somente padding coloca espaçamento em todos os lados */
     position: relative; /* delimita a sobreposição da classe pokemon__image fazendo que mesmo sobrepondo a pokedex respeite suas delimitações*/
 }
 
  .pokedex{
     width: 100%; /* ocupa 100% do espaço disponível, não cortando a imagem */
-    max-width: 425px;
+    max-width: 882px;
  }
 
  .pokemon__image{
     position: absolute; /* sobrepor a imagem, fica por cima da pokedex */
-    bottom: 55%;
-    left: 50%;
+    bottom: 50%;
+    left: 30%;
     transform: translate(-63%,20%); /* recebe 2 parametros, (x,y) ele move a imagem. O % é referente a IMAGEM em si, no caso do pokemon (imagem) e não da div em si */
     height: 18%;/* Definir uma altura máxima do pokemon, se não ele um pokemon que tenha uma area maior pode estrapolar o tamanho do visor da pokedex */
  }
@@ -38,9 +38,9 @@ main{
     position: absolute; /* sobrepõe a imagem, fica por cima da pokedex */
     font-weight: 600; /* espessura da fonte */
     color: #aaa; /* cor da fonte */
-    top: 54.5%; 
-    right: 27%;
-    font-size: clamp(6px, 3vw, 18px); /* recebe 3 parametros (tamanho minimo, valor desejavel, tamanho maximo) */
+    top: 60%; 
+    right: 59%;
+    font-size: clamp(3px, 2vw, 18px); /* recebe 3 parametros (tamanho minimo, valor desejavel, tamanho maximo) */
  }
 
  .pokemon__name{
@@ -50,9 +50,9 @@ main{
 
  .form {
     position: absolute;
-    width: 65%;
-    top: 65%;
-    left: 13.5%;
+    width: 25%;
+    top: 71%;
+    left: 20.5%;
  }
 
  .input__search{
@@ -63,15 +63,15 @@ main{
     border-radius: 5px;
     font-weight: 600;
     color: #3A444D;
-    font-size: clamp(8px, 5vw, 1rem);
+    font-size: clamp(3px, 3vw, 1rem);
     box-shadow: -3px 4px 0 #888, -5px 7px 0 #333
  }
 
  .buttons {
     position: absolute;
     bottom: 10%;
-    left: 50%;
-    width: 65%;
+    left: 30%;
+    width: 25%;
     transform: translate(-57%,0);
     display: flex;
     gap: 20px;
@@ -82,7 +82,7 @@ main{
     padding: 4%;
     border: 2px solid #000;
     border-radius: 5px;
-    font-size: clamp(5px, 5vw, 1rem);
+    font-size: clamp(5px, 2vw, 1rem);
     font-weight: 600;
     color: white;
     background-color: #444;
@@ -93,3 +93,36 @@ main{
     box-shadow: inset -4px 4px 0 #222;
     font-size: 0.9rem;
  }
+
+ .table__atributo{
+   position: absolute;
+   font-size: clamp(1px, 2vw, 1rem);   
+   right: 9%;
+   top: 37%;
+   background-color: #fff;
+   border: 2px solid #000;
+   border-radius: 5px;
+   text-align: left !important;
+   width: 30%;
+   text-transform: capitalize;
+}
+.table__atributo th {
+      background-color: rgb(112, 196, 105);
+      color: black;
+    }
+
+.table__atributo td {
+   width: 30%;
+ }
+
+ /* .checkbox__shiny{
+   position: absolute;
+   width: 60%;
+   bottom: 10%;
+ } */
+
+ /* .input__shiny{
+   bottom: 10%;
+ } */
+
+
