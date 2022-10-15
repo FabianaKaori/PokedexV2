@@ -115,14 +115,7 @@ main{
    width: 30%;
  }
 
- /* .checkbox__shiny{
+ .checkbox__shiny{
    position: absolute;
-   width: 60%;
-   bottom: 10%;
- } */
-
- /* .input__shiny{
-   bottom: 10%;
- } */
-
-
+   transform: translate(-3%,60%);
+ } 
